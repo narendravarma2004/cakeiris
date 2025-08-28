@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <section class="category">
+        <h1 class="title"> <span>Categories</span> </h1>
+        <!-- Cart button in the right corner -->
+        <button id="cart-btn" class="cart-btn" onclick="showCart()">🛒 Cart</button>
+
+        <!-- Cart modal for displaying cart items -->
+        <div id="cart-modal" class="cart-modal">
+            <span class="close-btn" onclick="closeCart()">×</span> <!-- Close button -->
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <h3>Total: ₹<span id="cart-total">0</span></h3> <!-- Total amount -->
+            <button id="buy-btn" class="buy-btn" onclick="proceedToBuy()">Proceed to Buy</button> <!-- Buy button -->
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img decoding="async" src="cup.jpeg" alt="Fresh Cupcake">
+                <h3>Cupcake</h3>
+                <p class="price">₹50</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="cookie.jpeg" alt="Cookies">
+                <h3>Cookies   
+                </h3>
+                <p class="price">₹180</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="brown.jpg" alt="Brown Bread">
+                <h3>Brown Bread</h3>
+                <p class="price">₹300</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="dark.jpeg" alt="Dark Chocolate">
+                <h3>Chocolate</h3>
+                <p class="price">₹450</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="wheat.jpeg" alt="Wheat">
+                <h3>Wheat</h3>
+                <p class="price">₹120</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <!-- Additional products -->
+            <div class="box">
+                <img decoding="async" src="muffin.jpg" alt="Muffin">
+                <h3>Muffin</h3>
+                <p class="price">₹200</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="scone.jpg" alt="Scone">
+                <h3>Scone</h3>
+                <p class="price">₹150</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="pancake.jpeg" alt="Pancake">
+                <h3>Pancake</h3>
+                <p class="price">₹250</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="croissant.jpeg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p class="price">₹300</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="fruittart.jpeg" alt="Fruit Tart">
+                <h3>Fruit Tart</h3>
+                <p class="price">₹380</p>
+                <button class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Item added to cart!</div>
+
+    <script src="cart.js" defer></script>
+</body>
+</html>
